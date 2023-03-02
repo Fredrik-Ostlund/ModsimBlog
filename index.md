@@ -1,5 +1,5 @@
 ---
-title: DD1354 ModSim Project blog
+title: DD1354 ModSim Project blog - Spring 2023
 ---
 
 Authors: Erik Fahlman (efahlman@kth.se) and Fredrik Östlund (jfmos@kth.se).
