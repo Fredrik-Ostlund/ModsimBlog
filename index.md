@@ -11,5 +11,5 @@ This is the landing page for the project blog, here we will document the project
 
 Latex: 
 
-$$X \sim Bin(n, p)$$
+$X \sim Bin(n, p)$
 
