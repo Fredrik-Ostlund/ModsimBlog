@@ -8,3 +8,8 @@ This is the landing page for the project blog, here we will document the project
 
 
 ![Screenshot](pictures/eleventh.png)
+
+Latex: 
+
+$$X \sim Bin(n, p)$$
+
