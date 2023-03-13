@@ -43,7 +43,7 @@ Today we got feedback on our project specification by Chris himself:
 
 We are very excited that our idea is ambitious enough to qualify for a possible A grade. It was especially helpful to have emphasised that we need to focus on the physics simulation. The initial idea is to ensure that we pay close attention to the elastic collisions of the balls. However, there might be other aspects to consider. For now though, we are going through with this idea.
 
-# 2023-02-28 Third post, Brainstorming and implementation approach.
+# 2023-02-28 Third post, brainstorming and implementation approach.
 
 Today we started brainstorming and formulating a plan about how to attack this project.
 
@@ -56,3 +56,14 @@ We looked back on the previous labs that we had done in the course to try to tak
 This means that we will be going in to this fairly blind. One challenge we have found is that, since we intend to implement all physics from scratch, we will not be using the physics simulation engine provided by Unity. Since most actual application use Unity's simulation engine (it is one of the main attractors of Unity) it is quite hard to find good sources on how to best do this. Another challenge is that, since Unity is such a widely used tool, there is much discussion going on about it on the internet. This introduces further challenge to finding good information. The information space is simply bloated, and when coming from virtually nothing experience-wise, it is hard to filter out the good from the bad advice. 
 
 In any case we are sure that we will manage to create something satisfying in the end. even if it means we will have to invent our own ways of working!
+
+
+
+# 2023-03-02 Fourth post, a MVP using the Unity-provided physics engine and a first try of our own implementation.
+
+After spending time the last few days learning how to operate Unity and watching guides and reading articles it was finally time to get started with some implementing!
+In order to get a feel of what we what to accomplish, we started by building a concept using all the tools provided by Unity. This means we utilized the different colliders and settings provided by Unity. We built the board by manually placing out different pegs and created a funnel so balls fall down approximately in the middle of the board. This worked quite well, and given how easy it was to set up, the end result looked quite good and it could easily handle many balls. See below for a screenshot. Unity is a remarkeable tool!
+
+![Screenshot](/pictures/galtonboardConceptArt.png)
+
+We started by writing a script that places pegs on the board in a systematic fashion. We also 
