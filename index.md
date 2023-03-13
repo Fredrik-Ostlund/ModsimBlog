@@ -139,3 +139,6 @@ But, as we see, there are some scaling issues remaining regarding the binomial d
 This was resolved through manual experimentation of the "bounci-ness" of each triangle. When a ball collides with a peg, we now scale the new velocity vector with a constant, making them bounce approximately to the next level of pegs if the ball hits on top of a peg. Now it's starting to look good!
 
 ![Screenshot](/pictures/day5_9.png)
+
+Some further refinement with the vertical spacing of the triangles gave even better results! 
+![Screenshot](/pictures/day5_10.png)
