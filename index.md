@@ -87,4 +87,4 @@ This was easily fixed however. When setting the scaling, we naturally experiment
 
 Here is the final result from this day!
 
-![Screenshot](/pictures/day4_3.png)
+![Screenshot](/pictures/day4_4.png)
