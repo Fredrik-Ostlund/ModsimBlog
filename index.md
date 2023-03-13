@@ -97,4 +97,6 @@ We also built rudimentary bins, which as for now are smaller copies of the floor
 
 ![Screenshot](/pictures/day5_1.png)
 
+This way, when the balls bounce off the bin-walls they bounce inwards, ideally trapping them inside the bins. However, sometimes they are forced through the walls when the "pressure" applied from above balls becomes large. We don't want that.
 
+![Screenshot](/pictures/day5_2.png)
