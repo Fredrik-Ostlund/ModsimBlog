@@ -91,12 +91,23 @@ Here is the final result from this day!
 
 # 2023-03-03 Fifth post, continued refinement and bins!
 
-We opted to implement peg-collision by doing reflections along the norm of the plane, depending on which side of the triangle that is hit. An unintended, by positive, consequence of using triangles as pegs is that it's quite easy to figure out the normal of the plane that constitutes either side that can be hit (the normal vector is the same regarless of where the ball hits). This means that the reflective angle, that becomes the new velocity vector of a ball hitting a side is also easy to figure out and work with. 
+We opted to implement peg-collision by doing reflections along the norm of the plane, depending on which side of the triangle that is hit. An unintended, by positive, consequence of using triangles as pegs is that it's quite easy to figure out the normal of the plane that constitutes either side that can be hit (the normal vector is the same regarless of where the ball hits). This means that the reflective angle, that becomes the new velocity vector of a ball hitting a side is also easy to figure out and work with. The same is done for the floor, but with the normal pointing upwards. This makes the balls bounce when hitting the ground!
 
 We also built rudimentary bins, which as for now are smaller copies of the floor, with the normals pointing inwards!
 
 ![Screenshot](/pictures/day5_1.png)
 
-This way, when the balls bounce off the bin-walls they bounce inwards, ideally trapping them inside the bins. However, sometimes they are forced through the walls when the "pressure" applied from above balls becomes large. We don't want that.
-
+This way, when the balls bounce off the bin-walls they bounce inwards, ideally trapping them inside the bins. However, sometimes they are forced through the walls when the "pressure" applied from above balls becomes large. We don't want that, but it works okay-ish for now. 
 ![Screenshot](/pictures/day5_2.png)
+
+Since every ball is acting on each collision, bouncing off each other, this becomes quite heavy calculation wise even for modest amounts of balls. They don't settle but instead vibrate in place, colliding with each other. We tried to hit to birds with one stone and also counteract the ball-mass applying pressure downwards by making them static when hitting the walls or floors and having an absolute velocity lower than some small treshold. This sort of worked, but some balls are still pushed outside of the bins while some get stuck on the walls in an awkward way.
+
+![Screenshot](/pictures/day5_3.png)
+
+Anyhow, some progress!
+
+# 2023-03-04 Sixth post, better elastic collisions between the balls!
+
+The balls behaved correctly in the Y dimension, but it seemed like they bounced wierdly in the X-dimension. We figured out that this was because the formulas we used for elastic collisions was configured for only one dimension. After some digging around, we found an alternate way of simulating the elastic collisions, using an angle free scheme! This means that the collisions could be calculated using only relative velocities and positions of the balls. The simulation is starting to take shape!
+
+![Screenshot](/pictures/day5_3.png)
