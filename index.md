@@ -118,7 +118,7 @@ We further refined by experimentation how to make the balls become static object
 
 ![Screenshot](/pictures/day5_5.png)
 
-# 2023-03-04 Seventh post, board building!
+# 2023-03-05 Seventh post, board building!
 
 Another aspect of creating this simulation is how to scale the board. How far apart should the pegs be, how big should the balls be and how large should each bin be. Here is a work-in-progress screenshot showing our experimentation with this. As you can see, in this version there is an issue with balls being forced through the ground. 
 
@@ -142,3 +142,6 @@ This was resolved through manual experimentation of the "bounci-ness" of each tr
 
 Some further refinement with the vertical spacing of the triangles gave even better results! 
 ![Screenshot](/pictures/day5_10.png)
+
+# 2023-03-06 Eight post (and final?) blog post! 
+With the simulation running quite nicely, we decided to give each bin a counter to showcase the number of balls in each bin. We can see that the number of balls roughly follow a binomial distribution, with the most ball-mass located in the central bins and thinning out towards the tails.
