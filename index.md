@@ -55,4 +55,4 @@ We looked back on the previous labs that we had done in the course to try to tak
 
 This means that we will be going in to this fairly blind. One challenge we have found is that, since we intend to implement all physics from scratch, we will not be using the physics simulation engine provided by Unity. Since most actual application use Unity's simulation engine (it is one of the main attractors of Unity) it is quite hard to find good sources on how to best do this. Another challenge is that, since Unity is such a widely used tool, there is much discussion going on about it on the internet. This introduces further challenge to finding good information. The information space is simply bloated, and when coming from virtually nothing experience-wise, it is hard to filter out the good from the bad advice. 
 
-In any case we are sure that we will manage to create something satisfying in the end!
+In any case we are sure that we will manage to create something satisfying in the end. even if it means we will have to invent our own ways of working!
