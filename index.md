@@ -148,7 +148,7 @@ With the simulation running quite nicely, we decided to give each bin a counter 
 
 ![Screenshot](/pictures/day5_11.png)
 
-Letting the simulation run with a few more balls we can see that the distribution is basically symmetric. Success!
+Letting the simulation run with a few more balls we can see that the distribution is basically symmetric as it should be. Success!
 
 ![Screenshot](/pictures/day5_12.png)
 
