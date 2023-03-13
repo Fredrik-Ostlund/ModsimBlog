@@ -110,4 +110,4 @@ Anyhow, some progress!
 
 The balls behaved correctly in the Y dimension, but it seemed like they bounced wierdly in the X-dimension. We figured out that this was because the formulas we used for elastic collisions was configured for only one dimension. After some digging around, we found an alternate way of simulating the elastic collisions, using an angle free scheme! This means that the collisions could be calculated using only relative velocities and positions of the balls. The simulation is starting to take shape!
 
-![Screenshot](/pictures/day5_3.png)
+![Screenshot](/pictures/day5_4.png)
