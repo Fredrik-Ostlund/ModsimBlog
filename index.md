@@ -118,8 +118,12 @@ We further refined by experimentation how to make the balls become static object
 
 ![Screenshot](/pictures/day5_5.png)
 
-# 2023-03-04 Seventh post, board sizing!
+# 2023-03-04 Seventh post, board building!
 
 Another aspect of creating this simulation is how to scale the board. How far apart should the pegs be, how big should the balls be and how large should each bin be. Here is a work-in-progress screenshot showing our experimentation with this. As you can see, in this version there is an issue with balls being forced through the ground. 
 
 ![Screenshot](/pictures/day5_6.png)
+
+It was time to set the pegs out in a triangular shape, we created an algorithm to do this systematically for an arbitrarly large board, however we opted to have five rows in total. Each row contains one peg more than the previous row, the spacing between each peg is two units large, and the starting location of each row is one unit to the left of the start peg for the previous row. Ta da!
+
+![Screenshot](/pictures/day5_7.png)
