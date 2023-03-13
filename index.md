@@ -88,3 +88,13 @@ This was easily fixed however. When setting the scaling, we naturally experiment
 Here is the final result from this day!
 
 ![Screenshot](/pictures/day4_4.png)
+
+# 2023-03-03 Fifth post, continued refinement and bins!
+
+We opted to implement peg-collision by doing reflections along the norm of the plane, depending on which side of the triangle that is hit. An unintended, by positive, consequence of using triangles as pegs is that it's quite easy to figure out the normal of the plane that constitutes either side that can be hit (the normal vector is the same regarless of where the ball hits). This means that the reflective angle, that becomes the new velocity vector of a ball hitting a side is also easy to figure out and work with. 
+
+We also built rudimentary bins, which as for now are smaller copies of the floor, with the normals pointing inwards!
+
+![Screenshot](/pictures/day5_1.png)
+
+
