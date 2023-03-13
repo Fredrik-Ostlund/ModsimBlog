@@ -80,3 +80,7 @@ Our first step was implementing gravity. We chose to have a gravity method that 
 We managed to use the triggers to do rudimentary elastic collisions. However, we forgot to make the pegs fixed in place, which was not obvious as the simulation runs by only applying gravity to the balls. This has some unintended results.. 
 
 ![Screenshot](/pictures/day4_2.png)
+
+This was easily fixed however. When setting the scaling, we naturally experimented with sizing of the colliders and objects themselves, resulting in unwanted behaviours when these are not aligned properly. 
+
+![Screenshot](/pictures/day4_3.png)
