@@ -62,7 +62,7 @@ In any case we are sure that we will manage to create something satisfying in th
 # 2023-03-02 Fourth post, a MVP using the Unity-provided physics engine and a first try of our own implementation.
 
 After spending time the last few days learning how to operate Unity and watching guides and reading articles it was finally time to get started with some implementing!
-In order to get a feel of what we what to accomplish, we started by building a concept using all the tools provided by Unity. This means we utilized the different colliders and settings provided by Unity. We built the board by manually placing out different pegs and created a funnel so balls fall down approximately in the middle of the board. This worked quite well, and given how easy it was to set up, the end result looked quite good and it could easily handle many balls. See below for a screenshot. Unity is a remarkeable tool!
+In order to get a feel of what we what to accomplish, we started by building a concept using all the tools provided by Unity. This means we utilized the different colliders and settings provided by Unity. We built the board by manually placing out different pegs and created a funnel so balls fall down approximately in the middle of the board. This worked quite well, and given how easy it was to set up, the end result looked quite good and it could easily handle many balls. See below for a screenshot. Unity is a remarkable tool!
 
 ![Screenshot](/pictures/galtonboardConceptArt.png)
 
