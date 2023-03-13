@@ -32,3 +32,5 @@ We intend to implement this in Unity, without the help of built in physics engin
      * ball-to-pin-collisions, where the pins are considered fixed, and the balls should bounce off them depending on angle and speed
  * Normal force, counteracting gravity when the balls become stationary on the ground
 
+The intended end-result is that it should be possible to spawn a desired number of balls, seeing them bounce down through the board before settling in the bins. 
+The ball-distribution should be that of a binomial distribution, where most balls should be located in the bins in the center, and then be approximately evenly thinning out to the sides. 
