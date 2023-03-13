@@ -74,3 +74,9 @@ We started by writing a script that places pegs on the board in a systematic fas
 We made a script to spawn balls on a fixed location when pressing the space bar. See the screenshot below for a first draft.
 
 ![Screenshot](/pictures/day4_1.png)
+
+Our first step was implementing gravity. We chose to have a gravity method that for every simulation step accelerates each ball downwards. As we are doing everything from scratch, it was quite tricky to get the scales right. What does a gravity constant of, say, 10 mean when the scales of the world are arbitrary?
+
+We managed to use the triggers to do rudimentary elastic collisions. However, we forgot to make the pegs fixed in place, which was not obvious as the simulation runs by only applying gravity to the balls. This has some unintended results.. 
+
+![Screenshot](/pictures/day4_2.png)
