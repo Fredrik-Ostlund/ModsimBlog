@@ -25,3 +25,10 @@ See below for a picture on how it can look like.
 
 ![Screenshot](/pictures/galtonBoardProjectSpecification.png)
 
+We intend to implement this in Unity, without the help of built in physics engine. That is, we will try to do everything physics-related from scratch. The main physics components will be
+ * Simulating gravity
+ * Elastic collisions (meaning that no energy is lost within the system due to the collision) of two kinds:
+     * ball-to-ball collisions, where the balls should react to eachother depending on their relative speeds and masses
+     * ball-to-pin-collisions, where the pins are considered fixed, and the balls should bounce off them depending on angle and speed
+ * Normal force, counteracting gravity when the balls become stationary on the ground
+
