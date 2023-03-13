@@ -117,3 +117,9 @@ Back to the bin-problem.
 We further refined by experimentation how to make the balls become static objects. We opted to have a static-flag on each ball, which gets activated either when a ball touches the ground while moving with a small absolute velocity, or when touching another static ball when moving with a small absolute velocity. This makes the "static-ness" trickle upwards, in a decently realistic fashion. However, balls still get stuck in unintended places, leading to unnatural gaps in the bins. But we can have many more balls now!
 
 ![Screenshot](/pictures/day5_5.png)
+
+# 2023-03-04 Seventh post, board sizing!
+
+Another aspect of creating this simulation is how to scale the board. How far apart should the pegs be, how big should the balls be and how large should each bin be. Here is a work-in-progress screenshot showing our experimentation with this. As you can see, in this version there is an issue with balls being forced through the ground. 
+
+![Screenshot](/pictures/day5_6.png)
