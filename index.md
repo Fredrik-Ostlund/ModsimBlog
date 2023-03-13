@@ -111,3 +111,9 @@ Anyhow, some progress!
 The balls behaved correctly in the Y dimension, but it seemed like they bounced wierdly in the X-dimension. We figured out that this was because the formulas we used for elastic collisions was configured for only one dimension. After some digging around, we found an alternate way of simulating the elastic collisions, using an angle free scheme! This means that the collisions could be calculated using only relative velocities and positions of the balls. The simulation is starting to take shape!
 
 ![Screenshot](/pictures/day5_4.png)
+
+Back to the bin-problem.
+
+We further refined by experimentation how to make the balls become static objects. We opted to have a static-flag on each ball, which gets activated either when a ball touches the ground while moving with a small absolute velocity, or when touching another static ball when moving with a small absolute velocity. This makes the "static-ness" trickle upwards, in a decently realistic fashion. However, balls still get stuck in unintended places, leading to unnatural gaps in the bins. But we can have many more balls now!
+
+![Screenshot](/pictures/day5_5.png)
