@@ -66,4 +66,7 @@ In order to get a feel of what we what to accomplish, we started by building a c
 
 ![Screenshot](/pictures/galtonboardConceptArt.png)
 
+
+Now it was time to try to do it ourselves. In the above example, we used Unity colliders and let the physics engine handle all collisions. We wanted to have access to the automatic collision detection so we settled for using collision triggers in our own implementation. This means that each object has its own collider, but on collisions nothing happens automatically, instead a trigger is sent to the object where our own physics related code will be run. 
+
 We started by writing a script that places pegs on the board in a systematic fashion. We also 
