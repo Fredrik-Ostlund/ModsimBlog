@@ -69,4 +69,8 @@ In order to get a feel of what we what to accomplish, we started by building a c
 
 Now it was time to try to do it ourselves. In the above example, we used Unity colliders and let the physics engine handle all collisions. We wanted to have access to the automatic collision detection so we settled for using collision triggers in our own implementation. This means that each object has its own collider, but on collisions nothing happens automatically, instead a trigger is sent to the object where our own physics related code will be run. 
 
-We started by writing a script that places pegs on the board in a systematic fashion. We also 
+We started by writing a script that places pegs on the board in a systematic fashion. We opted to model the pegs as triangles, as it intuitively works with the idea of a 50/50 chance of bouncing left and right if the ball hits the centre. Further, it makes clear that the balls and the pegs indeed are different objects.
+
+We made a script to spawn balls on a fixed location when pressing the space bar. See the screenshot below for a first draft.
+
+![Screenshot](/pictures/day4_1.png)
