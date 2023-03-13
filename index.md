@@ -147,3 +147,8 @@ Some further refinement with the vertical spacing of the triangles gave even bet
 With the simulation running quite nicely, we decided to give each bin a counter to showcase the number of balls in each bin. We can see that the number of balls roughly follow a binomial distribution, with the most ball-mass located in the central bins and thinning out towards the tails.
 
 ![Screenshot](/pictures/day5_11.png)
+
+Letting the simulation run with a few more balls we can see that the distribution is basically symmetric. Success!
+
+![Screenshot](/pictures/day5_12.png)
+
