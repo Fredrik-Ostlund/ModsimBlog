@@ -127,3 +127,11 @@ Another aspect of creating this simulation is how to scale the board. How far ap
 It was time to set the pegs out in a triangular shape, we created an algorithm to do this systematically for an arbitrarly large board, however we opted to have five rows in total. Each row contains one peg more than the previous row, the spacing between each peg is two units large, and the starting location of each row is one unit to the left of the start peg for the previous row. Ta da!
 
 ![Screenshot](/pictures/day5_7.png)
+
+Now onto the bin placements!
+
+We created prefabs of bins each with a corresponding internal box-collider, using triggers. When a ball enters a bin they become flagged as belonging to the bin. This way, we can calculate what the maximum x and y-positions of each separate ball is, essentially trapping them inside a bin. Now, the balls don't float through the bin-walls anymore. Also, this made it easy to prevent the balls from clipping through the ground. They can still bounce out, however! 
+
+But, as we see, there are some scaling issues remaining regarding the binomial distribution modeling. The balls tend to end up either in the central bins, or in the outmost bins. 
+
+![Screenshot](/pictures/day5_8.png)
