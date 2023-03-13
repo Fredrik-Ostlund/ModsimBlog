@@ -84,3 +84,7 @@ We managed to use the triggers to do rudimentary elastic collisions. However, we
 This was easily fixed however. When setting the scaling, we naturally experimented with sizing of the colliders and objects themselves, resulting in unwanted behaviours when these are not aligned properly. 
 
 ![Screenshot](/pictures/day4_3.png)
+
+Here is the final result from this day!
+
+![Screenshot](/pictures/day4_3.png)
