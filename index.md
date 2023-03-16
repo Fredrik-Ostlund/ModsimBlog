@@ -8,7 +8,7 @@ Authors: Erik Fahlman (efahlman@kth.se) and Fredrik Östlund (jfmos@kth.se).
 
 This blog will follow the development of a physics simulation project in the course DD1354 Models and Simulations at KTH. 
 
-The project aims to simulate a Galton Board. This is a toy where metal balls are dropped onto pegs that are arranged in a triangle-pattern. On each peg, the ball bounces of the peg and if it is calibrated(well built enough), there is roughly a 50/50 chance that the ball moves either to the right or to the left on each bounce. Each ball follows a binomial distribution **X~Bin(n, p)** where **n** is the number of rows in the board, and **p** is the chance of a bounce in either direction, i.e 0.5.
+The project aims to simulate a Galton Board. This is a toy where metal balls are dropped onto pegs that are arranged in a triangle-pattern. On each peg, the ball bounces off the peg and if it is calibrated(well-built enough), there is roughly a 50/50 chance that the ball moves either to the right or to the left on each bounce. Each ball follows a binomial distribution **X~Bin(n, p)** where **n** is the number of rows in the board, and **p** is the chance of a bounce in either direction, i.e 0.5.
 
 Together, all balls approximate a Probability Mass Function (PMF) of the binomial distribution (and given enough balls, a normal distribution).
 
@@ -82,7 +82,7 @@ Here is the final result from this day!
 
 # 2023-03-03 Fifth post, continued refinement and bins!
 
-We opted to implement peg-collision by doing reflections along the norm of the plane, depending on which side of the triangle that is hit. An unintended, by positive, consequence of using triangles as pegs is that it's quite easy to figure out the normal of the plane that constitutes either side that can be hit (the normal vector is the same regarless of where the ball hits). This means that the reflective angle, that becomes the new velocity vector of a ball hitting a side is also easy to figure out and work with. The same is done for the floor, but with the normal pointing upwards. This makes the balls bounce when hitting the ground!
+We opted to implement peg-collision by doing reflections along the norm of the plane, depending on which side of the triangle that is hit. An unintended, but positive, consequence of using triangles as pegs is that it's quite easy to figure out the normal of the plane that constitutes either side that can be hit (the normal vector is the same regarless of where the ball hits). This means that the reflective angle, that becomes the new velocity vector of a ball hitting a side is also easy to figure out and work with. The same is done for the floor, but with the normal pointing upwards. This makes the balls bounce when hitting the ground!
 
 We also built rudimentary bins, which as for now are smaller copies of the floor, with the normals pointing inwards!
 
@@ -91,7 +91,7 @@ We also built rudimentary bins, which as for now are smaller copies of the floor
 This way, when the balls bounce off the bin-walls they bounce inwards, ideally trapping them inside the bins. However, sometimes they are forced through the walls when the "pressure" applied from above balls becomes large. We don't want that, but it works okay-ish for now. 
 ![Screenshot](/pictures/day5_2.png)
 
-Since every ball is acting on each collision, bouncing off each other, this becomes quite heavy calculation wise even for modest amounts of balls. They don't settle but instead vibrate in place, colliding with each other. We tried to hit to birds with one stone and also counteract the ball-mass applying pressure downwards by making them static when hitting the walls or floors and having an absolute velocity lower than some small treshold. This sort of worked, but some balls are still pushed outside of the bins while some get stuck on the walls in an awkward way.
+Since every ball is acting on each collision, bouncing off each other, this becomes quite heavy calculation wise even for modest amounts of balls. They don't settle but instead vibrate in place, colliding with each other. We tried to hit two birds with one stone and also counteract the ball-mass applying pressure downwards by making them static when hitting the walls or floors and having an absolute velocity lower than some small treshold. This sort of worked, but some balls are still pushed outside of the bins while some get stuck on the walls in an awkward way.
 
 ![Screenshot](/pictures/day5_3.png)
 
@@ -115,7 +115,7 @@ Another aspect of creating this simulation is how to scale the board. How far ap
 
 ![Screenshot](/pictures/day5_6.png)
 
-It was time to set the pegs out in a triangular shape, we created an algorithm to do this systematically for an arbitrarly large board, however we opted to have five rows in total. Each row contains one peg more than the previous row, the spacing between each peg is two units large, and the starting location of each row is one unit to the left of the start peg for the previous row. Ta da!
+It was time to set the pegs out in a triangular shape, we created an algorithm to do this systematically for an arbitrarily large board, however we opted to have five rows in total. Each row contains one peg more than the previous row, the spacing between each peg is two units large, and the starting location of each row is one unit to the left of the start peg for the previous row. Ta da!
 
 ![Screenshot](/pictures/day5_7.png)
 
@@ -134,7 +134,7 @@ This was resolved through manual experimentation of the "bounci-ness" of each tr
 Some further refinement with the vertical spacing of the triangles gave even better results! 
 ![Screenshot](/pictures/day5_10.png)
 
-# 2023-03-06 Eight post (and final?) blog post! 
+# 2023-03-06 Eighth post (and final?) blog post! 
 With the simulation running quite nicely, we decided to give each bin a counter to showcase the number of balls in each bin. We can see that the number of balls roughly follow a binomial distribution, with the most ball-mass located in the central bins and thinning out towards the tails.
 
 ![Screenshot](/pictures/day5_11.png)
