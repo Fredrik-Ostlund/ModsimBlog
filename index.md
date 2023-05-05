@@ -143,3 +143,8 @@ Letting the simulation run with a few more balls we can see that the distributio
 
 ![Screenshot](/pictures/day5_12.png)
 
+# Adding some video clips and descriptions of the final state of the project: 
+
+![Screenshot](/pictures/gif_test.gif)
+
+
