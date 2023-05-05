@@ -162,5 +162,5 @@ In this clip we zoomed in a bit for easier viewing and can observe many more bal
 
 ![Screenshot](/pictures/GIF_3_new.gif)
 
-In this clip significantly more balls are generated in a short time-period. This results in more ball-ball collisions which tends to cause the balls to fall towards the center bins to a larger extent. At the start of the simulation wehn the balls are generated they spawn in one place but are then quickly forced away from each other since they aren't allowed to overlap, but after this initial situation we can then observe how the balls bounce off each other and interact with the triangles on their way down. 
+In this clip significantly more balls are generated in a short time-period. This results in more ball-ball collisions which tends to cause the balls to fall towards the center bins to a larger extent. At the start of the simulation when the balls are generated they spawn in one place but are then quickly forced away from each other since they aren't allowed to overlap, but after this initial situation we can then observe how the balls bounce off each other and interact with the triangles on their way down. 
 
