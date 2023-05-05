@@ -145,6 +145,12 @@ Letting the simulation run with a few more balls we can see that the distributio
 
 # Adding some video clips and descriptions of the final state of the project: 
 
-![Screenshot](/pictures/gif_test.gif)
+Here is clip 1: 
+![Screenshot](/pictures/GIF_1.gif)
 
+Here is clip 2: 
+![Screenshot](/pictures/GIF_2.gif)
+
+Here is clip 3: 
+![Screenshot](/pictures/GIF_3.gif)
 
