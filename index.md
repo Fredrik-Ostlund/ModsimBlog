@@ -159,6 +159,7 @@ Clip 2 - Balls interacting with other balls and triangles:
 In this clip we zoomed in a bit for easier viewing and can observe many more balls being spawned in a shorter time frame. Here we can see balls interacting with each other as they bounce through the triangles. We can also see the effect of many balls piling up in some of the bins. For performance reasons the balls become static objects when certain criteria are met (such as being in a bin, being in contact with ground / other static object, having low enough velocity etc.). It works reasonably well, but sometimes a ball is set to static a bit too soon, causing it to become stuck mid-air.
 
 Clip 3 - Even more balls:
+
 ![Screenshot](/pictures/GIF_3.gif)
 
 In this clip significantly more balls are generated in a short time-period. This results in more ball-ball collisions which tends to cause the balls to fall towards the center bins to a larger extent. 
