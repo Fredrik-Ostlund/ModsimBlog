@@ -164,3 +164,20 @@ In this clip we zoomed in a bit for easier viewing and can observe many more bal
 
 In this clip significantly more balls are generated in a short time-period. This results in more ball-ball collisions which tends to cause the balls to fall towards the center bins to a larger extent. At the start of the simulation when the balls are generated they spawn in one place but are then quickly forced away from each other since they aren't allowed to overlap, but after this initial situation we can then observe how the balls bounce off each other and interact with the triangles on their way down. 
 
+## Clip 4 - Closeup of ball bouncing / rolling off triangle
+
+![Screenshot](/pictures/GIF_4.gif)
+
+In this closeup we can see how the ball is moving pretty slowly and when bouncing off the triangle it doesn't quite get far enough away to clear the triangle, instead it hits it again on the corner, causing the ball to lose even more speed. This looks pretty convincing and realistic!
+
+## Clip 5 - Closeup of ball bouncing at higher speed
+
+![Screenshot](/pictures/GIF_5.gif)
+
+In this closeup we see a ball that hasn't lost too much of its speed bouncing more energetically off the triangles. This looks like what one would expect from a ball bouncing off a triangular peg. 
+
+## Clip 6 - Closeup of balls colliding with each other
+
+![Screenshot](/pictures/GIF_6.gif)
+
+In this closeup we see two balls bouncing into each other and the resulting change in velocity / direction, again, this looks like what one would expect from two balls colliding with each other.
